@@ -76,7 +76,19 @@ console.log(`Hello I am ${message}`);
 console.warn('Oh Noze!');
 console.error('Shit!');
 console.info('Information message');
-console.assert(1 === 2); //will only alert if the enclosed os wrong
+console.assert(1 === 2); //will only alert if the enclosed is wrong
+console.error('This is an error');
+
+console.table({a:1, b:2});
+
+    console.time('Hello');
+    console.log('hellow world');
+    console.log('hellow world');
+    console.log('hellow world');
+    console.log('hellow world');
+    console.log('hellow world');
+
+console.timeEnd('Hello');
 
 //console.clear();
 
