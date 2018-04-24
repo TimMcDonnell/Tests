@@ -1,0 +1,38 @@
+/** First approach */
+const div = document.createElement('div');
+div.setAttribute('class', 'bg-primary p-2 text-light');
+const text = document.createTextNode('Hello world!');
+div.appendChild(text);
+container.appendChild(div);
+
+/** Second approach */
+const text2 = 'Hello world 2!';
+container.innerHTML += `<div class="bg-secondary p-2 text-light">${text2}</div>`;
+
+/** Third approach */
+const text3 = 'Hello world 3';
+const div3 = new DOMParser().parseFromString(`<div class="bg-danger p-2 text-dark">${text3}</div>`, 'text/html');
+container.appendChild(div3.body.firstChild);
+
+
+
+
+
+
+
+
+
+
+
+
+for (const person of people) {
+
+    /** @type {Element} */
+    const li = document.createElement('li');
+
+    /** @type {Text} */
+    const txt = document.createTextNode(person.format());
+
+    li.appendChild(txt);
+    ul.insertAdjacentElement('beforeend', li)
+}
